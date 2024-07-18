@@ -1,0 +1,246 @@
+* {											
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+
+p{
+	padding: 1%;
+}
+
+img{
+	width: 130px;
+	height: 150px;
+
+	border: 2px solid #E21F4D;
+	border-radius: 25px;
+	padding: 2%;
+	margin: 3%;
+}
+
+input{
+	text-align: center;
+	border-radius: 20px;
+}
+
+body{
+	text-align: center;
+	align-content: center;
+	text-align: center;
+	align-content: center;
+	flex-direction: column, center;
+
+	background-color: #f5f0f2;
+}
+
+/*...Элементы, шрифты, цвета, стили, составные части... */
+@font-face {
+	font-family: 'Manrope'; 
+	src: url(fonts/Manrope-SemiBold.ttf); 
+}
+
+/* Цвета фона*/
+	.back-color-white{
+		background-color: #ffffff;
+	}
+	.back-color-red{
+		background-color: #E21F4D;
+	}
+	.back-color-pinkGrey{
+		background-color: #948e8f3f;
+	}
+/* Стили для вызова */
+	.Manrope{
+		font-family: 'Manrope';
+		font-style: normal;
+	}
+
+/* Текст цвет*/
+	.text-white{
+		color: #FFFFFF;
+	}
+	.text-black{
+		color: #3F3F3F;
+	}
+	.text-red{
+		color: #E21F4D;
+	}
+
+/* Типы текста */
+	.text-uppercase{
+		text-transform: uppercase;
+		font-size: 30px;
+		line-height: 41px;
+		font-weight: 400;
+		text-decoration: none;
+	}
+	.text-mid{
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 25px;
+		text-decoration: none;
+	}
+	.text-small{
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 19px;
+		text-decoration: none;
+	}
+
+/* Кнопки */
+	.ButtonStaffDiv{
+		display: flex;
+		flex-direction: column;
+	}
+		.StaffButton{
+			width: auto;
+			height: fit-content;
+			text-align: center;
+			margin: 5%;
+			display: block;
+			border-radius: 25px;
+			overflow: hidden;
+		}
+		.pageButton{
+			height: 30%;
+			width: 5%;
+			margin: 3%;
+			border-radius: 25px;	
+		}
+		.cartButton{
+			margin: 1%;
+			padding: 1%;
+			border: 2px transparent;
+			border-bottom-right-radius: 50px;
+			border-top-right-radius: 50px;
+
+		}
+
+/* Хедер  - бровь */
+.header{
+	position: sticky;
+	width: 80%;
+	margin-left: 10%;
+	overflow: hidden;
+	background-color: #948e8f3f;
+	border: 2px solid transparent;
+	border-radius: 25px;
+}
+	.divCartCnt{
+		border-bottom-left-radius: 50px;
+		border-top-left-radius: 50px;
+	}
+	.pageNm{
+		display: flex;
+		justify-content: center;
+		align-items: baseline;
+		flex-direction: row-reverse;
+	}
+.footer{
+	
+	position: sticky;
+	width: 80%;
+	/* height: 10%; */
+	margin-left: 10%;
+	margin-bottom: 2%;
+	overflow: hidden;
+	background-color: #948e8f3f;
+	border: 2px solid transparent;
+	border-radius: 25px;
+}
+	.brow{
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: flex-start;
+		align-items: baseline;
+	}
+
+/* Запись на прием */
+.points-column{
+	display: block;
+	float: center;
+}
+	.StaffParams{
+		width: 60%;
+		height: fit-content;
+		text-align: center;
+		display: block;
+		margin-top: 2%;
+		margin-bottom: 3%;
+		margin-left: 20%;
+		background-color: #ffffff;
+		border-radius: 10px;
+		position: sticky;
+		overflow: hidden;
+	}
+.interactive-image{
+	width: 50%;
+	
+	display: block;
+	float: center;
+}
+
+ /* Записаться на прием */
+.mainDivStaff{
+	display: block;
+	width: 80%;
+	height: fit-content;
+	overflow: hidden;
+
+	margin-left: 10%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+
+	border: 2px solid transparent;
+	border-radius: 25px;
+}
+.mainDivStaff{
+	display: flex;
+	flex-direction: row;
+	position: sticky;
+	justify-content: space-evenly
+}
+	.StaffDiv{
+		background-color: #fffcfcbe;
+		height: auto;
+
+		margin: 2%;
+		display: flex;
+		width: fit-content;
+
+		border: 2px solid transparent;
+		border-radius: 25px;
+	}
+	.StaffDivAction{
+		display: flex;
+		flex-direction: column;
+		padding-left: 5%;
+		overflow-x: hidden;
+	}
+.mainDivStaffCart{
+	display: flex;
+	flex-direction: column;
+
+	width: 80%;
+	height: fit-content;
+	overflow: hidden;
+
+	margin-left: 10%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+
+	border: 2px solid transparent;
+	border-radius: 25px;
+}
+	.cartStaff{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+
+		margin: 1%;
+		border: 2px solid transparent;
+    	border-radius: 25px;
+	}
